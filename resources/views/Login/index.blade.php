@@ -13,14 +13,14 @@
         <form action="{{route('login')}}" method="POST" class="form-container">
             @csrf
             <div class="input-box email">
-                <input type="email"  id="email-input" required placeholder="Username">
+                <input type="email"  id="email-input" required placeholder="Username" name="email">
                 <img src="https://cdn-icons-png.flaticon.com/512/6325/6325109.png" alt="user-image" width="25px">
             </div>
             {{-- @error('email')
                 <p>{{$massage}}</p>
             @enderror --}}
             <div class="input-box password">
-                <input type="password"  id="password-input" required placeholder="Password">
+                <input type="password"  id="password-input" required placeholder="Password" name="password">
                 <img src="https://cdn-icons-png.flaticon.com/512/2489/2489659.png" alt="lock-image" width="22px">
             </div>
             <div class="remember-forgot">

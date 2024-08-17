@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/register.css')}}">
 </head>
 <body>
-    <form action="/registrasi" method="POST">
+    <form action="{{route ('/registrasi')}}" method="POST">
       @csrf
         <div class="container">
           <h1 class="sign">Sign Up</h1>
