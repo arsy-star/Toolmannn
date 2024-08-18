@@ -1,7 +1,7 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{asset('css/utama.css')}}">
+  <link rel="stylesheet" href="{{asset('css/Utama/utama.css')}}">
   </head>
   <body>
     <div class="header">
@@ -19,7 +19,7 @@
       <div class="container">  
         <div class="main">
           <h1>selamat datang</h1>
-          <a href="#" class="btn-main">Get Started</a>
+          <a href="{{route('registrasi')}}" class="btn-main">Get Started</a>
           
         </div>
       </div>
