@@ -26,7 +26,7 @@ Route::get('/dashboard',[Dashboardcontroller::class,'Dashboard'])->name('dashboa
 Route::get('/registrasi',[Registrasicontroller::class,'Regis'])->name('/registrasi');
 Route::post('/registrasi',[Registrasicontroller::class,'store']);
 
-Route::get('/login',[Logincontroller::class,'Login']);
-Route::post('/login',[Logincontroller::class,'store'])->name('login');
+Route::get('/login',[Logincontroller::class,'Login'])->name('login');
+Route::post('/login',[Logincontroller::class,'store']);
 
 Route::get('/dashboard_admin',[Dashboardcontroller::class,'Admin'])->name('dashboard_admin');
