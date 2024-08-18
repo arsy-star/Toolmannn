@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard',[Dashboardcontroller::class,'Dashboard'])->name('dashboard');
 
-Route::get('/registrasi',[Registrasicontroller::class,'Regis'])->name('/registrasi');
+Route::get('/registrasi',[Registrasicontroller::class,'Regis'])->name('registrasi');
 Route::post('/registrasi',[Registrasicontroller::class,'store']);
 
 Route::get('/login',[Logincontroller::class,'Login'])->name('login');
