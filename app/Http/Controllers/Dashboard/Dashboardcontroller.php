@@ -16,4 +16,8 @@ class Dashboardcontroller extends Controller
     public function Admin(){
         return view('Dashboard.Dashboard-admin.index');
     }
+
+    public function User(){
+        return view('Dashboard.Dashboard-user.index');
+    }
 }
