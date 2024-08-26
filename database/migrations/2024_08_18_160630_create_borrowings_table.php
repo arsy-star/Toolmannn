@@ -17,6 +17,7 @@ return new class extends Migration
             $table->date('tanggal_peminjaman');
             $table->date('tanggal_pengembalian');
             $table->integer('jumlah');
+            
             $table->timestamps();
         });
     }

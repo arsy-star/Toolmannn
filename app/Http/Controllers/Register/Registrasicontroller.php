@@ -34,7 +34,7 @@ class Registrasicontroller extends Controller
             
         ]);
 
-        return redirect('/login');
+        return redirect()->route('login');
 
         
 

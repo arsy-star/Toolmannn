@@ -13,6 +13,14 @@ class Itemcontroller extends Controller
         return view('Dashboard.Dashboard-user.read-item');
     }
 
+    public function Readd(){
+        return view('Dashboard.Dashboard-user.item-coba');
+    }
+
+    public function rea(){
+        return view('Dashboard.Dashboard-admin.item-show');
+    }
+
 
 
 
@@ -20,6 +28,8 @@ class Itemcontroller extends Controller
         $items = Item::all();
         return view('Item.index',compact('items'));
     }
+
+    
 
 
 }

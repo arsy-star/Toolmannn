@@ -9,7 +9,5 @@ class Admin extends Model
 {
     use HasFactory;
 
-    protected $table = 'admins';
-
-    protected $fillable = ['nama','category','storage_rack','stok','jumlah'];
+   
 }

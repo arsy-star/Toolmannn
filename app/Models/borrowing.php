@@ -9,7 +9,7 @@ class borrowing extends Model
 {
     use HasFactory;
 
-    protected $table = 'borrowing';
+    protected $table = 'borrowings';
 
-    protected $fillable = [''];
+    protected $fillable = ['tanggal_peminjaman','tanggal_pengembalian','jumlah'];
 }

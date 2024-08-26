@@ -41,6 +41,11 @@ Route::post('/input_admin',[Admincontroller::class,'store'])->name('input_admin.
 Route::get('/dashboard_user',[Dashboardcontroller::class,'User'])->name('dashboard_user');
 
 Route::get('/Item',[itemcontroller::class,'Read'])->name('item.index');
+Route::get('/Item_coba',[itemcontroller::class,'Readd'])->name('item.indexx');
+route::get('/items',[Itemcontroller::class,'rea'])->name('items');
 
 Route::get('/borrowing',[Borrowingcontroller::class,'index'])->name('borrowing');
+Route::get('/cobaaa',[Borrowingcontroller::class,'inndex'])->name('cobaaa');
+
+Route::post('/borrowing',[Borrowingcontroller::class,'store'])->name('borrowing.store');
 

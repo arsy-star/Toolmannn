@@ -14,7 +14,7 @@ class Admincontroller extends Controller
 
     public function store(Request $request){
 
-        
+
 
 
         $data = $request->validate([
@@ -36,6 +36,8 @@ class Admincontroller extends Controller
 
             
         ]);
+
+        
 
         return redirect()->route('dashboard_admin');
 

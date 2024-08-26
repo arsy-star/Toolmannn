@@ -127,7 +127,7 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="{{route('dashboard')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                <a href="{{route('login')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -150,7 +150,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{route('dashboard_admin')}}" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         
                         <li>
@@ -158,6 +158,12 @@
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="{{route('items')}}"><i class="fa fa-thin fa-box fa-fw"></i> items</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-thin fa-users fa-fw"></i> customers</a>
                         </li>
                         
                        

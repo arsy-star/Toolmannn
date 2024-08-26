@@ -13,8 +13,31 @@ class Borrowingcontroller extends Controller
         return view('Dashboard.Dashboard-user.create');
     }
 
+    public function inndex(){
+        return view('Dashboard.Dashboard-user.input-form');
+    }
+
     public function create($id){
         $item = item::findOrFail($id);
-        return view('peminjaman.create', compact('item'));
+        return view('Dashboard.Dashboard-user.create', compact('item'));
     }
+
+    public function store(Request $request){
+        $Data = $request->validate([
+            'tanggal_peminjaman'=>'required',
+            'tanggal_pengembalian'=>'required',
+            'jumlah'=>'required',
+           
+        ]);
+
+        borrowing::create([
+            'tanggal_peminjaman'=> $request->tanggal_peminjaman,
+            'tanggal_pengembalian'=> $request->tanggal_pengembalian,
+            'jumlah'=> $request->jumlah,
+        ]);
+
+        return redirect()->route('dashboard_admin');
+    }
+
+    
 }
