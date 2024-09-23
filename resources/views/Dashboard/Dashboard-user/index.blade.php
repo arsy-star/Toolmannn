@@ -14,7 +14,7 @@
             </div>
             <ul class="sidebar-menu">
                 <li><a href="{{route('dashboard_user')}}">Dashboard</a></li>
-                {{-- <li><a href="{{route('item')}}">Item</a></li> --}}
+                <li><a href="{{route('item.index')}}">Item</a></li>
                 <li><a href="#">Tasks</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Reports</a></li>
@@ -26,7 +26,7 @@
                 <h1>Dashboard</h1>
                 <div class="user-info">
                     <p>Welcome, User</p>
-                    <a href="{{route('login')}}">Logout</a>
+                    <a href="{{route('logout')}}">Logout</a>
                 </div>
             </header>
             <div class="content">

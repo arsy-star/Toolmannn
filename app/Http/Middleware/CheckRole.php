@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Middleware;
+use Illuminate\Support\Facades\Auth;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -13,18 +14,14 @@ class CheckRole
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-   // public function handle(Request $request, Closure $next): Response
-   //{
-     //   return $next($request);
-    //}
+    public function handle(Request $request, Closure $next, $role): Response
+    {
+        if (Auth::check() && Auth::user()->role == $role) {
+            return redirect('dashboard_user');  // Jika bukan admin, redirect ke halaman user
+            
+        }
 
-    public function handle($request, Closure $next, $role)
-{
-    if (auth()->user()->role !== $role) {
-        return redirect('/dashboard')->with('error', 'Anda tidak memiliki akses ke halaman ini.');
+        return $next($request);
+    }
     }
 
-    return $next($request);
-}
-
-}

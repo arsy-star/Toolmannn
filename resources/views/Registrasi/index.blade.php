@@ -28,8 +28,8 @@
            <select name="Role" required>
             <option selected hidden value="">Role</option>
             <option value="admin">admin</option>
-            <option value="student">student</option>
-            <option value="teacher">teacher</option>
+            <option value="operator">operator</option>
+            <option value="user">user</option>
             {{-- <option value="66">+66</option> --}}
            </select>
            

@@ -8,13 +8,18 @@ use Illuminate\Http\Request;
 
 class Admincontroller extends Controller
 {
+    
+    public function Admin(){
+        return view('Dashboard.Dashboard-admin.index');
+    }
+
     public function create(){
         return view('Dashboard.Dashboard-admin.create');
     }
 
     public function store(Request $request){
 
-        
+
 
 
         $data = $request->validate([
@@ -36,6 +41,8 @@ class Admincontroller extends Controller
 
             
         ]);
+
+        
 
         return redirect()->route('dashboard_admin');
 

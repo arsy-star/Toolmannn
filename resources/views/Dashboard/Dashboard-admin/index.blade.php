@@ -127,7 +127,10 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="{{route('dashboard')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                {{-- <form action="{{route('logout')}}" method="POST">
+                                    <button type="submit" class="dropdown-item"><i class="fa fa-sign-out fa-fw"></i>logout</button>
+                                </form> --}}
+                                <a href="{{route('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -150,14 +153,20 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{route('dashboard_admin')}}" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Data Peminjaman</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i>petugas</a>
+                        </li>
+                        <li>
+                            <a href="{{route('items')}}"><i class="fa fa-thin fa-box fa-fw"></i> items</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-thin fa-users fa-fw"></i> customers</a>
                         </li>
                         
                        

@@ -1,0 +1,42 @@
+body {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,50,85,1) 0%, rgba(95,101,110,0.6530813008797269) 100%);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    margin-bottom: 15px;
+  }
+  
+  div {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 25px;
+  }
+  
+  input[type=submit] {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,50,85,1) 0%, rgba(95,101,110,0.6530813008797269) 100%);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+  }
