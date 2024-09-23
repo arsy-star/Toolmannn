@@ -17,7 +17,9 @@ class Itemcontroller extends Controller
         return view('Dashboard.Dashboard-user.item-coba');
     }
 
-    public function readdd(){
+
+
+    public function rea(){
         return view('Dashboard.Dashboard-admin.item-show');
     }
 

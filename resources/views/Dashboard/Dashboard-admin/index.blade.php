@@ -127,10 +127,7 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                {{-- <form action="{{route('logout')}}" method="POST">
-                                    <button type="submit" class="dropdown-item"><i class="fa fa-sign-out fa-fw"></i>logout</button>
-                                </form> --}}
-                                <a href="{{route('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                <a href="{{route('dashboard')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -161,6 +158,12 @@
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i>petugas</a>
+                        </li>
+                        <li>
+                            <a href="{{route('items')}}"><i class="fa fa-thin fa-box fa-fw"></i> items</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-thin fa-users fa-fw"></i> customers</a>
                         </li>
                         <li>
                             <a href="{{route('items')}}"><i class="fa fa-thin fa-box fa-fw"></i> items</a>

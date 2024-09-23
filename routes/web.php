@@ -49,6 +49,13 @@ route::get('/items',[Itemcontroller::class,'readdd'])->name('items');
 
 Route::get('/borrowing',[Borrowingcontroller::class,'index'])->name('borrowing');
 Route::get('/cobaaa',[Borrowingcontroller::class,'inndex'])->name('cobaaa');
+route::get('/items',[Itemcontroller::class,'rea'])->name('items');
+
+Route::get('/borrowing',[Borrowingcontroller::class,'index'])->name('borrowing');
+Route::get('/cobaaa',[Borrowingcontroller::class,'inndex'])->name('cobaaa');
+
+Route::post('/borrowing',[Borrowingcontroller::class,'store'])->name('borrowing.store');
+
 
 Route::post('/borrowing',[Borrowingcontroller::class,'store'])->name('borrowing.store');
 
